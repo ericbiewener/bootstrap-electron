@@ -5,8 +5,8 @@
     "main": "rm -rf dist && webpack --watch --config webpack.config.main.js",
     "renderer": "webpack-dev-server --hot --config webpack.config.renderer.js",
     "electron": "nodemon --watch dist/main.js --exec \"electron .\"",
-    "prettier": "prettier --write \"**/*.{ts,tsx,js,json,yml}\"",
-    "lint": "eslint src/**/*.{ts,tsx}",
+    "prettier": "prettier --write \"**/*.{js,ts,tsx,js,json,yml}\"",
+    "lint": "eslint '**/*.{js,ts,tsx,gql}'",
     "m": "yarn main",
     "r": "yarn renderer",
     "e": "yarn electron"
@@ -55,7 +55,7 @@
     "**/*.{json,yml}": [
       "prettier --write"
     ],
-    "**/*.{ts,tsx,gql}": [
+    "**/*.{js,ts,tsx,gql}": [
       "prettier --write",
       "eslint --fix"
     ]
@@ -65,6 +65,6 @@
       "pre-commit": "lint-staged"
     }
   },
-  "main": "dist/main.js",
+  "main": "dist/main/main.js",
   "license": "MIT"
 }

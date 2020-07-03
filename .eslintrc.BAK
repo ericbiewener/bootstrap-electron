@@ -1,14 +1,12 @@
 module.exports = {
-  extends: 'ericbiewener',
-  env: {
-    node: true,
-    es6: true,
-    browser: false,
-  },
   overrides: [
     {
       files: ['src/**/*.{ts,tsx}'],
       extends: 'ericbiewener-typescript',
+      env: {
+        node: true,
+        browser: false,
+      },
     },
     {
       files: ['src/renderer/**/*.{ts,tsx}'],

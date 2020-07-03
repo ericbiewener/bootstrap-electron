@@ -9,7 +9,7 @@ const createConfig = (entryFilename, config) => ({
   mode: process.env.NODE_ENV || 'development',
   entry: path.join(paths.src, entryFilename),
   output: {
-    filename: `${removeFileExt(path.basename(entryFilename))}.js`
+    filename: `${removeFileExt(entryFilename)}.js`,
   },
   devtool: 'source-map',
   resolve: {
