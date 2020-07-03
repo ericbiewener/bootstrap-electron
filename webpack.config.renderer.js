@@ -2,7 +2,7 @@ const { createConfig, rules, paths } = require('./webpack.config.shared')
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-module.exports = createConfig('renderer.tsx', {
+module.exports = createConfig('renderer/renderer.tsx', {
   target: 'electron-renderer',
   module: {
     rules: [

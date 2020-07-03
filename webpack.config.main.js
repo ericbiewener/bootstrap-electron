@@ -1,6 +1,6 @@
 const { createConfig, rules } = require('./webpack.config.shared')
 
-module.exports = createConfig('main.ts', {
+module.exports = createConfig('main/main.ts', {
   target: 'electron-main',
   node: {
     __dirname: false,
