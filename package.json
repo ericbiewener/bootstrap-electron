@@ -6,7 +6,7 @@
     "renderer": "webpack-dev-server --hot --config webpack.config.renderer.js",
     "electron": "nodemon --watch dist/main.js --exec \"electron .\"",
     "prettier": "prettier --write \"**/*.{js,ts,tsx,js,json,yml}\"",
-    "lint": "eslint '**/*.{js,ts,tsx,gql}'",
+    "lint": "eslint '**/*.{js,ts,tsx,gql}' --fix",
     "m": "yarn main",
     "r": "yarn renderer",
     "e": "yarn electron"
